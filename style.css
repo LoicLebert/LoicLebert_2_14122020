@@ -15,14 +15,27 @@ section
     background-color: #f2f2f2;
 }
 
+aside
+{
+    flex: 1.2;
+    position: relative;
+    padding: 10px;
+}
+
 #hebergements
 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-content: space-around;
 }
 
-.premier_cadre
+#premiere_ligne
+{
+    display: flex;  
+}
+
+.premier_hotel
 {
     border: 10px black solid;
     border-radius: 10px;
@@ -30,7 +43,7 @@ section
     height: 200px;
 }
 
-.deuxieme_cadre
+.second_hotel
 {
     border: 10px black solid;
     border-radius: 10px;
@@ -38,7 +51,7 @@ section
     height: 200px;
 }
 
-.troisieme_cadre
+.troisieme_hotel
 {
     border: 10px black solid;
     border-radius: 10px;
@@ -46,7 +59,12 @@ section
     height: 200px;
 }
 
-.quatrieme_cadre
+#deuxieme_ligne
+{
+    display: flex;
+}
+
+.quatrieme_hotel
 {
     border: 10px black solid;
     border-radius: 10px;
@@ -54,7 +72,7 @@ section
     height: 200px;
 }
 
-.cinquieme_cadre
+.cinquieme_hotel
 {
     border: 10px black solid;
     border-radius: 10px;
@@ -62,7 +80,7 @@ section
     height: 200px;
 }
 
-.sixieme_cadre
+.sixieme_hotel
 {
     border: 10px black solid;
     border-radius: 10px;
