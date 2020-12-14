@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <meta charset="UTF-8 />
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="style.css" />
         <title>Reservia</title>
+        <script src="https://kit.fontawesome.com/8264f3a608.js" crossorigin="anonymous"></script>
     </head>
     
     <body>
         <div id="bloc_page">
             <header>
                 <div id="logo">
-                    <img src="Ressources/images/logo/Reservia@3x.png" alt="Logo Reservia" />
+                    <img src="Ressources/images/logo/Reservia@3x.png" alt="Logo Reservia" width="100px" height="50px"/>
                 </div>
                 
                 <nav>
                     <ul>
-                        <li><a href="#">Hébergements</a></li>
-                        <li><a href="#">Activités</a></li>
+                        <li><a href="#hebergements">Hébergements</a></li>
+                        <li><a href="#activites">Activités</a></li>
                         <li> S'inscrire</li>
                     </ul>
                 </nav>
@@ -27,12 +29,13 @@
 
                 <div id="recherche">
                     <div class="barre">
+                        <i class="fas fa-map-marker-alt"></i>
                         <form>
                             <input type="search" name="recherche" placeholder="Marseille, France" />
                             <input type="submit" value="Rechercher" />
                         </form>
                     </div>
-                    <div classe="filtres">
+                    <div class="filtres">
                         <h3>Filtres</h3>
                             <ul>
                                 <li>Économique</li>
@@ -42,5 +45,72 @@
                             </ul>
                     </div>
                 </div>
+            </header>
+
+            <section>
+                <div id="hebergements">
+                    <h1>Hébergements à Marseille</h1>
+                        <div class="premier_cadre">
+                            <img src="Ressources/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Photo Marseille 1" width="200px" height="200px" />
+                            <h2>Auberge de la Cannebière</h2>
+                            <h3>Nuit à partir de 25€</h3> 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="deuxieme_cadre">
+                            <img src="Ressources/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Photo Marseille 2" width="200px" height="200px" />
+                            <h2>Hôtel du port</h2>
+                            <h3>Nuit à partir de 52€</h3>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="troisieme_cadre">
+                            <img src="Ressources/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Photo Marseille 3" width="200px" height="200px" />
+                            <h2>Hôtel les mouettes</h2>
+                            <h3>Nuit à partir de 76€</h3>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="quatrieme_cadre">
+                            <img src="Ressources/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Photo Marseille 4" width="200px" height="200px" />
+                            <h2>Hôtel de la mer</h2>
+                            <h3>Nuit à partir de 46€</h3>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="cinquieme_cadre">
+                            <img src="Ressources/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Photo Marseille 5" width="200px" height="200px" />
+                            <h2>Auberge Le Panier</h2>
+                            <h3>Nuit à partir de 23€</h3>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="sixieme_cadre">
+                            <img src="Ressources/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Photo Marseille 6" width="200px" height="200px" />
+                            <h2>Hôtel chez Amina</h2>
+                            <h3>Nuit à partir de 96€</h3>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                </div>
+            </section>
     </body>
 </html>
