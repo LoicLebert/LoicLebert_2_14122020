@@ -1,181 +1,271 @@
+/* ========== Généralités ========== */
 @font-face {
     font-family: 'Raleway';
     src: url('Raleway-Bold.ttf') format('ttf'),
     font-weight: normal;
     font-style: normal;
 }
-
-body
-{
+#bloc_page {
+    margin-left: 20px;
+}
+body {
     font-family: 'Raleway';
 }
 
-nav ul
-{
+/* ========== Recherche ==========*/
+nav ul {
     list-style-type: none;
     display: flex;
     justify-content: flex-end;
 }
-
-nav li
-{
+nav li {
     margin-right: 15px;
 }
-
-section
-{
-    background-color: #f2f2f2;
-    border: 20px #f2f2f2 solid;
-    border-radius: 20px;
-    width: 1550px;
-    height: 850px;
-}
-
-aside
-{
-    display: flex;
-    flex-direction: column;
-    align-content: space-around;
-    margin-left: 50px;
-    position: absolute right;
-    padding: 10px;
-    background-color: #f2f2f2;
-    border: 20px #f2f2f2 solid;
-    border-radius: 20px;
-    width: 200px;
-    height: 850px;
-}
-
-.premier_hotel_aside
-{
-    border: 10px black solid;
-    border-radius: 10px;
-    width: 150px;
-    height: 150px;
-    align-self: center;
-}
-
-.deuxieme_hotel_aside
-{
-    border: 10px black solid;
-    border-radius: 10px;
-    width: 150px;
-    height: 150px;
-    align-self: center;
-}
-
-.troisieme_hotel_aside
-{
-    border: 10px black solid;
-    border-radius: 10px;
-    width: 150px;
-    height: 150px;
-    align-self: center;
-}
-
-
-#principale
-{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-}
-
-#hebergements
-{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: space-around;
-    height: 850px;
+form {
     position: relative;
-    left: 60px;
+    margin-left: 25px;
 }
-
-#hebergements h1
-{
-    position: absolute;
-    top: 10px;
-    left: -30px;
+.fa-map-marker-alt {
+    position:absolute
 }
-
-#premiere_ligne
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 1000px;
-
-}
-
-.premier_hotel
-{
-    border: 10px black solid;
-    border-radius: 10px;
-    width: 200px;
-    height: 200px;
-    transition: transform .2s;
-}
-
-.premier_hotel:hover {
-    transform: scale(1.5);
-}
-
-.second_hotel
-{
-    border: 10px black solid;
-    border-radius: 10px;
-    width: 200px;
-    height: 200px;
-}
-
-.troisieme_hotel
-{
-    border: 10px black solid;
-    border-radius: 10px;
-    width: 200px;
-    height: 200px;
-}
-
-#deuxieme_ligne
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-end;
-    width: 1000px;
-}
-
-.quatrieme_hotel
-{
-    border: 10px black solid;
-    border-radius: 10px;
-    width: 200px;
-    height: 200px;
-}
-
-.cinquieme_hotel
-{
-    border: 10px black solid;
-    border-radius: 10px;
-    width: 200px;
-    height: 200px;
-}
-
-.sixieme_hotel
-{
-    border: 10px black solid;
-    border-radius: 10px;
-    width: 200px;
-    height: 200px;
-}
-
 .filtres ul
 {
     list-style-type: none;
     display: flex;
     flex-direction: row;
 }
+
+/* ========== Sections ==========*/
+#principale {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 1800px;
+}
+    /* ========== Première section ==========*/
+#premiere_section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #f2f2f2;
+    border: 20px #f2f2f2 solid;
+    border-radius: 20px;
+    width: 1200px;
+    height: 850px;
+}
+#premiere_section h1
+{
+    position: absolute;
+    top: 10px;
+    left: -30px;
+}
+#premiere_ligne
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 1200px;
+    margin-left: 0px;
+    padding-left: 0px;
+    margin-top: 20px;
+}
+.premier_hotel
+{
+    border: 10px rgb(255, 255, 255) solid;
+    border-radius: 10px;
+    width: 300px;
+    height: 220px;
+    transition: transform .2s;
+}
+.premier_hotel:hover {
+    transform: scale(1.5);
+}
+.second_hotel
+{
+    border: 10px rgb(255, 255, 255) solid;
+    border-radius: 10px;
+    width: 300px;
+    height: 220px;
+}
+.troisieme_hotel
+{
+    border: 10px rgb(255, 255, 255) solid;
+    border-radius: 10px;
+    width: 300px;
+    height: 220px;
+}
+#deuxieme_ligne
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 1200px;
+    padding-bottom: -100px;
+}
+.quatrieme_hotel
+{
+    border: 10px rgb(255, 255, 255) solid;
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+}
+.cinquieme_hotel
+{
+    border: 10px rgb(255, 255, 255) solid;
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+}
+.sixieme_hotel
+{
+    border: 10px rgb(255, 255, 255) solid;
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+}
+
+    /* ========== Section aside ==========*/
+aside {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    position: relative right;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border: 20px #f2f2f2 solid;
+    border-radius: 20px;
+    width: 500px;
+    height: 830px;
+}
+.fa-chart-line {
+        font-size: 1.7em;
+        position: absolute;
+        top: -50px;
+        right: 10px;
+    }
+}
+.premier_hotel_aside {
+    border: 10px rgb(255, 255, 255) solid;
+    border-radius: 10px;
+    width: 250px;
+    height: 200px;
+    align-self: center;
+}
+.deuxieme_hotel_aside {
+    border: 10px rgb(255, 255, 255) solid;
+    border-radius: 10px;
+    width: 250px;
+    height: 200px;
+    align-self: center;
+}
+.troisieme_hotel_aside {
+    border: 10px rgb(255, 255, 255) solid;
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    align-self: center;
+}
+#section_aside
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 850px;
+    position: relative;
+}
+    /* ========== Section activités ==========*/
+#activites {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1850px;
+    left: 60px;
+    right: 60px;
+    margin-bottom: 10px;
+    height: 500px;
+}
+.premiere_activite {
+    border: 10px rgb(255, 255, 255) solid;
+    border-radius: 10px;
+    width: 350px;
+    height: 500px;
+    transition: transform .2s;
+    box-shadow: 0px 10px 4px rgb(221, 221, 221);
+}
+.premiere_activite:hover {
+    transform: scale(1.2);
+}
+.deuxieme_activite {
+    border: 10px rgb(255, 255, 255) solid;
+    border-radius: 10px;
+    width: 350px;
+    height: 240px;
+    transition: transform .2s;
+    box-shadow: 0px 10px 4px rgb(221, 221, 221);
+}
+.deuxieme_activite:hover {
+    transform: scale(1.2);
+}
+.troisieme_activite {
+    border: 10px rgb(255, 255, 255) solid;
+    border-radius: 10px;
+    width: 350px;
+    height: 190px;
+    transition: transform .2s;
+    box-shadow: 0px 10px 4px rgb(221, 221, 221);
+}
+.troisieme_activite:hover {
+    transform: scale(1.2);
+}
+.quatrieme_activite {
+    border: 10px rgb(255, 255, 255) solid;
+    border-radius: 10px;
+    width: 350px;
+    height: 500px;
+    transition: transform .2s;
+    box-shadow: 0px 10px 4px rgb(221, 221, 221);
+}
+.quatrieme_activite:hover {
+    transform: scale(1.2);
+}
+.cinquieme_activite {
+    border: 10px rgb(255, 255, 255) solid;
+    border-radius: 10px;
+    width: 350px;
+    height: 190px;
+    transition: transform .2s;
+    box-shadow: 0px 10px 4px rgb(221, 221, 221);
+}
+.cinquieme_activite:hover {
+    transform: scale(1.2);
+}
+.sixieme_activite {
+    border: 10px rgb(255, 255, 255) solid;
+    border-radius: 10px;
+    width: 350px;
+    height: 190px;
+    transition: transform .2s;
+    box-shadow: 0px 10px 4px rgb(221, 221, 221);
+}
+.sixieme_activite:hover {
+    transform: scale(1.2);
+}
+#aside h1
+{
+    position: absolute;
+    top: 10px;
+    left: -30px;
+}
+#deuxieme_colonne
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
 
 .filtres ul li
 {
