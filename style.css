@@ -1,3 +1,15 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('Raleway-Bold.ttf') format('ttf'),
+    font-weight: normal;
+    font-style: normal;
+}
+
+body
+{
+    font-family: 'Raleway';
+}
+
 nav ul
 {
     list-style-type: none;
@@ -13,13 +25,60 @@ nav li
 section
 {
     background-color: #f2f2f2;
+    border: 20px #f2f2f2 solid;
+    border-radius: 20px;
+    width: 1550px;
+    height: 850px;
 }
 
 aside
 {
-    flex: 1.2;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    margin-left: 50px;
+    position: absolute right;
     padding: 10px;
+    background-color: #f2f2f2;
+    border: 20px #f2f2f2 solid;
+    border-radius: 20px;
+    width: 200px;
+    height: 850px;
+}
+
+.premier_hotel_aside
+{
+    border: 10px black solid;
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    align-self: center;
+}
+
+.deuxieme_hotel_aside
+{
+    border: 10px black solid;
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    align-self: center;
+}
+
+.troisieme_hotel_aside
+{
+    border: 10px black solid;
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    align-self: center;
+}
+
+
+#principale
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
 
 #hebergements
@@ -28,11 +87,25 @@ aside
     flex-direction: row;
     flex-wrap: wrap;
     align-content: space-around;
+    height: 850px;
+    position: relative;
+    left: 60px;
+}
+
+#hebergements h1
+{
+    position: absolute;
+    top: 10px;
+    left: -30px;
 }
 
 #premiere_ligne
 {
-    display: flex;  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 1000px;
+
 }
 
 .premier_hotel
@@ -41,6 +114,11 @@ aside
     border-radius: 10px;
     width: 200px;
     height: 200px;
+    transition: transform .2s;
+}
+
+.premier_hotel:hover {
+    transform: scale(1.5);
 }
 
 .second_hotel
@@ -62,6 +140,10 @@ aside
 #deuxieme_ligne
 {
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 1000px;
 }
 
 .quatrieme_hotel
