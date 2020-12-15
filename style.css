@@ -8,8 +8,18 @@
 #bloc_page {
     margin-left: 20px;
 }
-body {
+h1, h2 {
     font-family: 'Raleway';
+}
+h1 {
+    font-size: 2em;
+}
+h2 {
+    font-size: 1.5em;
+}
+h3 {
+    font-family: 'Raleway';
+    font-weight: 400;
 }
 
 /* ========== Recherche ==========*/
@@ -79,7 +89,7 @@ form {
     transition: transform .2s;
 }
 .premier_hotel:hover {
-    transform: scale(1.5);
+    transform: scale(1.2);
 }
 .second_hotel
 {
@@ -145,25 +155,67 @@ form {
     top: 0px;
     left: 40px;
 }
+#section_aside h2 {
+    padding-left: 160px;
+}
+#section_aside h3 {
+    padding-left: 160px;
+}
+.images_aside {
+    position: absolute;
+    left: -75px;
+}
+.premier_hotel_aside {
+    border: 10px rgb(255, 255, 255) solid;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: #ffffff;
+    width: 420px;
+    height: 200px;
+    transition: transform .2s;
+    align-self: center;
+    overflow: hidden;
+}
+.premier_hotel_aside:hover {
+    transform: scale(1.2);
+}
+.premier_hotel_aside h2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: absolute;
+    top: -10px;
+    left: 10px;
+}
+.premier_hotel_aside h3 {
+    position: absolute;
+    top: 60px;
+    left: 10px;
+}
+.premier_hotel_aside, .fa-star {
+    display: flex;
+    flex-direction: row;
+}
+#septieme_groupe_etoiles {
+    position: absolute;
+    top: 110px;
+    left: 170px;
+}
 .fa-chart-line {
         font-size: 1.7em;
         position: absolute;
         top: 20px;
         right: 10px;
 }
-.premier_hotel_aside {
-    border: 10px rgb(255, 255, 255) solid;
-    border-radius: 10px;
-    width: 420px;
-    height: 150px;
-    align-self: center;
-}
-.premier_hotel_aside h2 h3 {
-    
-}
 .deuxieme_hotel_aside {
     border: 10px rgb(255, 255, 255) solid;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: #ffffff;
     width: 420px;
     height: 150px;
     align-self: center;
@@ -171,6 +223,10 @@ form {
 .troisieme_hotel_aside {
     border: 10px rgb(255, 255, 255) solid;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: #ffffff;
     width: 420px;
     height: 150px;
     align-self: center;
