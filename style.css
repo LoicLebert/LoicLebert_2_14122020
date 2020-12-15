@@ -39,27 +39,28 @@ form {
 #principale {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-between;
-    width: 1800px;
+    width: 1850px;
 }
     /* ========== Première section ==========*/
-#premiere_section {
+#section_hebergements {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    position: relative;
     background-color: #f2f2f2;
     border: 20px #f2f2f2 solid;
     border-radius: 20px;
     width: 1200px;
     height: 850px;
+    order: 1;
 }
-#premiere_section h1
+#section_hebergements h1
 {
     position: absolute;
-    top: 10px;
-    left: -30px;
+    top: 0px;
+    left: 40px;
 }
 #premiere_ligne
 {
@@ -67,16 +68,14 @@ form {
     flex-direction: row;
     justify-content: space-around;
     width: 1200px;
-    margin-left: 0px;
-    padding-left: 0px;
-    margin-top: 20px;
+    padding-top: 80px;
 }
 .premier_hotel
 {
     border: 10px rgb(255, 255, 255) solid;
     border-radius: 10px;
-    width: 300px;
-    height: 220px;
+    width: 320px;
+    height: 240px;
     transition: transform .2s;
 }
 .premier_hotel:hover {
@@ -86,15 +85,15 @@ form {
 {
     border: 10px rgb(255, 255, 255) solid;
     border-radius: 10px;
-    width: 300px;
-    height: 220px;
+    width: 320px;
+    height: 240px;
 }
 .troisieme_hotel
 {
     border: 10px rgb(255, 255, 255) solid;
     border-radius: 10px;
-    width: 300px;
-    height: 220px;
+    width: 320px;
+    height: 240px;
 }
 #deuxieme_ligne
 {
@@ -102,80 +101,86 @@ form {
     flex-direction: row;
     justify-content: space-around;
     width: 1200px;
-    padding-bottom: -100px;
+    padding-bottom: 80px;
 }
 .quatrieme_hotel
 {
     border: 10px rgb(255, 255, 255) solid;
     border-radius: 10px;
-    width: 200px;
-    height: 200px;
+    width: 320px;
+    height: 240px;
 }
 .cinquieme_hotel
 {
     border: 10px rgb(255, 255, 255) solid;
     border-radius: 10px;
-    width: 200px;
-    height: 200px;
+    width: 320px;
+    height: 240px;
 }
 .sixieme_hotel
 {
     border: 10px rgb(255, 255, 255) solid;
     border-radius: 10px;
-    width: 200px;
-    height: 200px;
+    width: 320px;
+    height: 240px;
 }
 
     /* ========== Section aside ==========*/
-aside {
-    display: flex;
-    flex-direction: column;
-    margin-left: 50px;
-    position: relative right;
-    padding: 10px;
-    background-color: #f2f2f2;
-    border: 20px #f2f2f2 solid;
-    border-radius: 20px;
-    width: 500px;
-    height: 830px;
-}
-.fa-chart-line {
-        font-size: 1.7em;
-        position: absolute;
-        top: -50px;
-        right: 10px;
-    }
-}
-.premier_hotel_aside {
-    border: 10px rgb(255, 255, 255) solid;
-    border-radius: 10px;
-    width: 250px;
-    height: 200px;
-    align-self: center;
-}
-.deuxieme_hotel_aside {
-    border: 10px rgb(255, 255, 255) solid;
-    border-radius: 10px;
-    width: 250px;
-    height: 200px;
-    align-self: center;
-}
-.troisieme_hotel_aside {
-    border: 10px rgb(255, 255, 255) solid;
-    border-radius: 10px;
-    width: 150px;
-    height: 150px;
-    align-self: center;
-}
-#section_aside
-{
+#section_aside {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     height: 850px;
     position: relative;
+    background-color: #f2f2f2;
+    border: 20px #f2f2f2 solid;
+    border-radius: 20px;
+    width: 500px;
+    height: 830px;
+    order: 2;
+    padding-top: 25px;
+}
+#section_aside h1 {
+    position: absolute;
+    top: 0px;
+    left: 40px;
+}
+.fa-chart-line {
+        font-size: 1.7em;
+        position: absolute;
+        top: 20px;
+        right: 10px;
+}
+.premier_hotel_aside {
+    border: 10px rgb(255, 255, 255) solid;
+    border-radius: 10px;
+    width: 420px;
+    height: 150px;
+    align-self: center;
+}
+.premier_hotel_aside h2 h3 {
+    
+}
+.deuxieme_hotel_aside {
+    border: 10px rgb(255, 255, 255) solid;
+    border-radius: 10px;
+    width: 420px;
+    height: 150px;
+    align-self: center;
+}
+.troisieme_hotel_aside {
+    border: 10px rgb(255, 255, 255) solid;
+    border-radius: 10px;
+    width: 420px;
+    height: 150px;
+    align-self: center;
 }
     /* ========== Section activités ==========*/
+#section_activites {
+    width: 1850px;
+    height: 500px;
+    order: 3;
+}
 #activites {
     display: flex;
     flex-direction: row;
@@ -251,12 +256,6 @@ aside {
 }
 .sixieme_activite:hover {
     transform: scale(1.2);
-}
-#aside h1
-{
-    position: absolute;
-    top: 10px;
-    left: -30px;
 }
 #deuxieme_colonne
 {
