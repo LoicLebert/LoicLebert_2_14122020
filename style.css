@@ -52,22 +52,37 @@ a {
 }
 #titre_principal h3 {
     position: relative;
-    top: -15px;
+    top: 0px;
 }
 input[type="search"] {
     font-size: 2em;
     font-family: 'Raleway';
 }
+    /* ========== Logo et navigation ==========*/
+#logo_navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
 /* ========== Recherche ==========*/
 nav ul {
-    font-family: 'Raleway';
-    list-style-type: none;
     display: flex;
-    justify-content: flex-end;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-between;
+    width: 600px;
+    font-family: 'Raleway';
+    font-size: 1.5em;
 }
-nav li {
-    margin-right: 15px;
+.nav_hebergements a:hover {
+    color: #0065FC;
+}
+.nav_activites a:hover {
+    color: #0065FC;
+}
+.nav_inscription a {
+    color: #0065FC;
 }
 #recherche {
     width: 600px;
@@ -76,7 +91,7 @@ nav li {
     border-radius: 20px;
     overflow: hidden;
     position: relative;
-    top: -10px;
+    top: 20px;
 }
 form {
     width: 600px;
@@ -119,18 +134,32 @@ form {
 {
     display: flex;
     flex-direction: row;
-    justify-content: baseline;
 }
 #filtres ul {
     font-family: 'Raleway';
-    font-size: 1.2em;
+    font-size: 1.3em;
     font-weight: 700;
     list-style-type: none;
     display: flex;
     flex-direction: row;
+    padding-top: 62px;
 }
 #filtres h2 {
-    padding-top: 15px;
+    padding-top: 80px;
+}
+.information {
+    width: 550px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+.fa-info-circle {
+    padding-top: -2px;
+    font-size: 2em;
+    color: #ffffff;
+    background-color: #0065FC;
+    border-radius: 50%;
 }
 
 /* ========== Sections ==========*/
@@ -152,6 +181,7 @@ form {
     border-radius: 20px;
     width: 1200px;
     height: 900px;
+    margin-top: 70px;
     order: 1;
 }
 #section_hebergements h1 {

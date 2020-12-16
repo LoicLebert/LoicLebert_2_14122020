@@ -11,17 +11,25 @@
     <body>
         <div id="bloc_page">
             <header>
+                <div id="logo_navigation">
                 <div id="logo">
                     <img src="Ressources/images/logo/Reservia@3x.png" alt="Logo Reservia" />
                 </div>
         <!-- ========== Navigation ========== -->       
-                <nav>
+                <nav id="navigation">
                     <ul>
-                        <li><a href="#section_hebergements">Hébergements</a></li>
-                        <li><a href="#activites">Activités</a></li>
-                        <li> S'inscrire</li>
+                        <div class="nav_hebergements">
+                            <li><a href="#section_hebergements">Hébergements</a></li>
+                        </div>
+                        <div class="nav_activites">
+                            <li><a href="#activites">Activités</a></li>
+                        </div>
+                        <div class="nav_inscription">
+                            <li><a href="#">S'inscrire</a></li>
+                        </div>
                     </ul>
                 </nav>
+                </div>
         <!-- ========== Titre ========== -->            
                 <div id="titre_principal">
                     <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
@@ -41,11 +49,23 @@
                     <div id="filtres">
                         <h2>Filtres</h2>
                             <ul>
-                                <li>Économique</li>
-                                <li>Familial</li>
-                                <li>Romantique</li>
-                                <li>Animaux autorisés</li>
+                                <div class="economique">
+                                    <li><a href="#">Économique</a></li>
+                                </div>
+                                <div class="familial">
+                                <li><a href="#">Familial</a></li>
+                                </div>
+                                <div class="romantique">
+                                <li><a href="#">Romantique</a></li>
+                                </div>
+                                <div class="animaux_autorises">
+                                <li><a href="#">Animaux autorisés</a></li>
+                                </div>
                             </ul>
+                    </div>
+                    <div class="information">
+                    <i class="fas fa-info-circle"></i>
+                    <h3>Plus de 500 logements sont disponibles dans cette ville</h3>
                     </div>
                 </div>
             </header>
