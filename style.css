@@ -15,11 +15,25 @@ h1 {
     font-size: 2em;
 }
 h2 {
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 h3 {
     font-family: 'Raleway';
     font-weight: 400;
+}
+.fa-star {
+    color: #0065FC;
+}
+.disabled {
+    color: #f2f2f2
+}
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+a {
+    text-decoration: none;
+    color: black;
 }
 
 /* ========== Recherche ==========*/
@@ -82,28 +96,39 @@ form {
 }
 .premier_hotel
 {
-    border: 10px rgb(255, 255, 255) solid;
+    border: 5px rgb(255, 255, 255) solid;
     border-radius: 10px;
     width: 320px;
     height: 240px;
     transition: transform .2s;
+    box-shadow: 0px 10px 4px rgb(221, 221, 221);
 }
 .premier_hotel:hover {
     transform: scale(1.2);
 }
 .second_hotel
 {
-    border: 10px rgb(255, 255, 255) solid;
+    border: 5px rgb(255, 255, 255) solid;
     border-radius: 10px;
     width: 320px;
     height: 240px;
+    transition: transform .2s;
+    box-shadow: 0px 10px 4px rgb(221, 221, 221);
+}
+.second_hotel:hover {
+    transform: scale(1.2);
 }
 .troisieme_hotel
 {
-    border: 10px rgb(255, 255, 255) solid;
+    border: 5px rgb(255, 255, 255) solid;
     border-radius: 10px;
     width: 320px;
     height: 240px;
+    transition: transform .2s;
+    box-shadow: 0px 10px 4px rgb(221, 221, 221);
+}
+.troisieme_hotel:hover {
+    transform: scale(1.2);
 }
 #deuxieme_ligne
 {
@@ -115,24 +140,39 @@ form {
 }
 .quatrieme_hotel
 {
-    border: 10px rgb(255, 255, 255) solid;
+    border: 5px rgb(255, 255, 255) solid;
     border-radius: 10px;
     width: 320px;
     height: 240px;
+    transition: transform .2s;
+    box-shadow: 0px 10px 4px rgb(221, 221, 221);
+}
+.quatrieme_hotel:hover {
+    transform: scale(1.2);
 }
 .cinquieme_hotel
 {
-    border: 10px rgb(255, 255, 255) solid;
+    border: 5px rgb(255, 255, 255) solid;
     border-radius: 10px;
     width: 320px;
     height: 240px;
+    transition: transform .2s;
+    box-shadow: 0px 10px 4px rgb(221, 221, 221);
+}
+.cinquieme_hotel:hover {
+    transform: scale(1.2);
 }
 .sixieme_hotel
 {
-    border: 10px rgb(255, 255, 255) solid;
+    border: 5px rgb(255, 255, 255) solid;
     border-radius: 10px;
     width: 320px;
     height: 240px;
+    transition: transform .2s;
+    box-shadow: 0px 10px 4px rgb(221, 221, 221);
+}
+.sixieme_hotel:hover {
+    transform: scale(1.2);
 }
 
     /* ========== Section aside ==========*/
@@ -140,15 +180,13 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 850px;
     position: relative;
+    width: 500px;
+    height: 850px;
     background-color: #f2f2f2;
     border: 20px #f2f2f2 solid;
     border-radius: 20px;
-    width: 500px;
-    height: 830px;
     order: 2;
-    padding-top: 25px;
 }
 #section_aside h1 {
     position: absolute;
@@ -161,75 +199,103 @@ form {
 #section_aside h3 {
     padding-left: 160px;
 }
-.images_aside {
+.fa-chart-line {
+    font-size: 1.7em;
     position: absolute;
-    left: -75px;
+    top: 20px;
+    right: 10px;
 }
-.premier_hotel_aside {
-    border: 10px rgb(255, 255, 255) solid;
+        /* ========== Premier Hôtel Aside ========== */
+#premier_hotel_aside {
+    border: 5px rgb(255, 255, 255) solid;
     border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    position: relative;
     background-color: #ffffff;
     width: 420px;
-    height: 200px;
+    height: 170px;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
     transition: transform .2s;
     align-self: center;
-    overflow: hidden;
+    order: 1;
+    box-shadow: 0px 10px 4px rgb(221, 221, 221);
 }
-.premier_hotel_aside:hover {
+#premier_hotel_aside:hover {
     transform: scale(1.2);
 }
-.premier_hotel_aside h2 {
+#premier_hotel_aside img {
+    width: 150px;
+    height: 170px;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.texte_premier_hotel_aside {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    padding-left: 80px;
+    position: absolute;
+    background-color: #ffffff;
+}
+.texte_premier_hotel_aside h2 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    position: absolute;
     top: -10px;
-    left: 10px;
-}
-.premier_hotel_aside h3 {
     position: absolute;
+}
+.texte_premier_hotel_aside h3 {
     top: 60px;
     left: 10px;
-}
-.premier_hotel_aside, .fa-star {
-    display: flex;
-    flex-direction: row;
+    position: absolute;
 }
 #septieme_groupe_etoiles {
+    display: flex;
+    flex-direction: row;
     position: absolute;
     top: 110px;
     left: 170px;
 }
-.fa-chart-line {
-        font-size: 1.7em;
-        position: absolute;
-        top: 20px;
-        right: 10px;
-}
-.deuxieme_hotel_aside {
-    border: 10px rgb(255, 255, 255) solid;
+        /* ========== Deuxième Hôtel Aside ========== */
+#deuxieme_hotel_aside {
+    border: 5px rgb(255, 255, 255) solid;
     border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    position: relative;
     background-color: #ffffff;
     width: 420px;
-    height: 150px;
-    align-self: center;
-}
-.troisieme_hotel_aside {
-    border: 10px rgb(255, 255, 255) solid;
-    border-radius: 10px;
+    height: 170px;
+    margin-top: -100px;
     display: flex;
-    flex-direction: column;
-    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    transition: transform .2s;
+    align-self: center;
+    order: 2;
+    box-shadow: 0px 10px 4px rgb(221, 221, 221);
+}
+#deuxieme_hotel_aside:hover {
+    transform: scale(1.2);
+}
+        /* ========== Troisième Hôtel Aside ========== */
+#troisieme_hotel_aside {
+    border: 5px rgb(255, 255, 255) solid;
+    border-radius: 10px;
     background-color: #ffffff;
     width: 420px;
-    height: 150px;
+    height: 170px;
+    margin-top: -100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    transition: transform .2s;
     align-self: center;
+    order: 3;
+    box-shadow: 0px 10px 4px rgb(221, 221, 221);
+}
+#troisieme_hotel_aside:hover {
+    transform: scale(1.2);
 }
     /* ========== Section activités ==========*/
 #section_activites {
