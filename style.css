@@ -12,20 +12,23 @@ h1, h2 {
     font-family: 'Raleway';
 }
 h1 {
-    font-size: 2em;
+    font-size: 1.8em;
+    margin: 3px;
 }
 h2 {
     font-size: 1.2em;
+    margin: 3px;
 }
 h3 {
     font-family: 'Raleway';
     font-weight: 400;
+    margin: 3px;
 }
 .fa-star {
     color: #0065FC;
 }
 .disabled {
-    color: #f2f2f2
+    color: #d1d1d1
 }
 a:visited {
     text-decoration: none;
@@ -37,8 +40,7 @@ a {
 }
 ::placeholder {
     font-family: 'Raleway';
-    font-size: 2em;
-    padding-left: 20px;
+    font-size: 1em;
 }
 #logo img {
     width: 150px;
@@ -51,6 +53,10 @@ a {
 #titre_principal h3 {
     position: relative;
     top: -15px;
+}
+input[type="search"] {
+    font-size: 2em;
+    font-family: 'Raleway';
 }
 
 /* ========== Recherche ==========*/
@@ -124,7 +130,7 @@ form {
     flex-direction: row;
 }
 #filtres h2 {
-    padding-top: 3px;
+    padding-top: 15px;
 }
 
 /* ========== Sections ==========*/
@@ -145,11 +151,10 @@ form {
     border: 20px #f2f2f2 solid;
     border-radius: 20px;
     width: 1200px;
-    height: 850px;
+    height: 900px;
     order: 1;
 }
-#section_hebergements h1
-{
+#section_hebergements h1 {
     position: absolute;
     top: 0px;
     left: 40px;
@@ -164,40 +169,114 @@ form {
 }
 .premier_hotel
 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     border: 5px rgb(255, 255, 255) solid;
-    border-radius: 10px;
-    width: 320px;
-    height: 240px;
+    border-radius: 30px;
+    width: 340px;
+    height: 260px;
     transition: transform .2s;
     box-shadow: 0px 10px 4px rgb(221, 221, 221);
-    position: relative;
+    overflow: hidden;
 }
 .premier_hotel:hover {
     transform: scale(1.2);
 }
+.premier_hotel img {
+    width: 340px;
+    height: 160px;
+    object-fit: cover;
+    overflow: hidden;
+}
+.texte_premier_hotel {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-left: 10px;
+    width: 340px;
+    height: 100px;
+    background-color: white;
+}
+#premier_groupe_etoiles {
+    display: flex;
+    flex-direction: row;
+    padding-left: 2px;
+    padding-top: 12px;
+}
 .second_hotel
 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     border: 5px rgb(255, 255, 255) solid;
-    border-radius: 10px;
-    width: 320px;
-    height: 240px;
+    border-radius: 30px;
+    width: 340px;
+    height: 260px;
     transition: transform .2s;
     box-shadow: 0px 10px 4px rgb(221, 221, 221);
+    overflow: hidden;
 }
 .second_hotel:hover {
     transform: scale(1.2);
 }
+.second_hotel img {
+    width: 340px;
+    height: 160px;
+    object-fit: cover;
+    overflow: hidden;
+}
+.texte_second_hotel {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-left: 10px;
+    width: 340px;
+    height: 100px;
+    background-color: white;
+}
+#deuxieme_groupe_etoiles {
+    display: flex;
+    flex-direction: row;
+    padding-left: 2px;
+    padding-top: 12px;
+}
 .troisieme_hotel
 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     border: 5px rgb(255, 255, 255) solid;
-    border-radius: 10px;
-    width: 320px;
-    height: 240px;
+    border-radius: 30px;
+    width: 340px;
+    height: 260px;
     transition: transform .2s;
     box-shadow: 0px 10px 4px rgb(221, 221, 221);
+    overflow: hidden;
 }
 .troisieme_hotel:hover {
     transform: scale(1.2);
+}
+.troisieme_hotel img {
+    width: 340px;
+    height: 160px;
+    object-fit: cover;
+    overflow: hidden;
+}
+.texte_troisieme_hotel {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-left: 10px;
+    width: 340px;
+    height: 100px;
+    background-color: white;
+}
+#troisieme_groupe_etoiles {
+    display: flex;
+    flex-direction: row;
+    padding-left: 2px;
+    padding-top: 12px;
 }
 #deuxieme_ligne
 {
@@ -205,44 +284,137 @@ form {
     flex-direction: row;
     justify-content: space-around;
     width: 1200px;
-    padding-bottom: 80px;
+    padding-bottom: 170px;
 }
 .quatrieme_hotel
 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     border: 5px rgb(255, 255, 255) solid;
-    border-radius: 10px;
-    width: 320px;
-    height: 240px;
+    border-radius: 30px;
+    width: 340px;
+    height: 260px;
     transition: transform .2s;
     box-shadow: 0px 10px 4px rgb(221, 221, 221);
+    overflow: hidden;
 }
 .quatrieme_hotel:hover {
     transform: scale(1.2);
 }
+.quatrieme_hotel img {
+    width: 340px;
+    height: 160px;
+    object-fit: cover;
+    overflow: hidden;
+}
+.texte_quatrieme_hotel {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-left: 10px;
+    width: 340px;
+    height: 100px;
+    background-color: white;
+}
+#quatrieme_groupe_etoiles {
+    display: flex;
+    flex-direction: row;
+    padding-left: 2px;
+    padding-top: 12px;
+}
 .cinquieme_hotel
 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     border: 5px rgb(255, 255, 255) solid;
-    border-radius: 10px;
-    width: 320px;
-    height: 240px;
+    border-radius: 30px;
+    width: 340px;
+    height: 260px;
     transition: transform .2s;
     box-shadow: 0px 10px 4px rgb(221, 221, 221);
+    overflow: hidden;
 }
 .cinquieme_hotel:hover {
     transform: scale(1.2);
 }
+.cinquieme_hotel img {
+    width: 340px;
+    height: 160px;
+    object-fit: cover;
+    overflow: hidden;
+}
+.texte_cinquieme_hotel {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-left: 10px;
+    width: 340px;
+    height: 100px;
+    background-color: white;
+}
+#cinquieme_groupe_etoiles {
+    display: flex;
+    flex-direction: row;
+    padding-left: 2px;
+    padding-top: 12px;
+}
 .sixieme_hotel
 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     border: 5px rgb(255, 255, 255) solid;
-    border-radius: 10px;
-    width: 320px;
-    height: 240px;
+    border-radius: 30px;
+    width: 340px;
+    height: 260px;
     transition: transform .2s;
     box-shadow: 0px 10px 4px rgb(221, 221, 221);
+    overflow: hidden;
 }
 .sixieme_hotel:hover {
     transform: scale(1.2);
 }
+.sixieme_hotel img {
+    width: 340px;
+    height: 160px;
+    object-fit: cover;
+    overflow: hidden;
+}
+.texte_sixieme_hotel {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-left: 10px;
+    width: 340px;
+    height: 100px;
+    background-color: white;
+}
+#sixieme_groupe_etoiles {
+    display: flex;
+    flex-direction: row;
+    padding-left: 2px;
+    padding-top: 12px;
+}
+#afficher_plus {
+    width: 400px;
+    height: 80px;
+    color: black;
+    font-family: 'Raleway';
+    font-size: 2em;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    position: absolute;
+    background: none;
+    left: -70px;
+    top: 765px;
+}
+#affichier_plus:hover {
+    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
+}
+
 
     /* ========== Section aside ==========*/
 #section_aside {
@@ -251,7 +423,7 @@ form {
     justify-content: space-around;
     position: relative;
     width: 500px;
-    height: 850px;
+    height: 900px;
     background-color: #f2f2f2;
     border: 20px #f2f2f2 solid;
     border-radius: 20px;
