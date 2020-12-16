@@ -12,9 +12,9 @@
         <div id="bloc_page">
             <header>
                 <div id="logo">
-                    <img src="Ressources/images/logo/Reservia@3x.png" alt="Logo Reservia" width="100px" height="50px"/>
+                    <img src="Ressources/images/logo/Reservia@3x.png" alt="Logo Reservia" />
                 </div>
-                
+        <!-- ========== Navigation ========== -->       
                 <nav>
                     <ul>
                         <li><a href="#hebergements">Hébergements</a></li>
@@ -22,22 +22,24 @@
                         <li> S'inscrire</li>
                     </ul>
                 </nav>
-
+        <!-- ========== Titre ========== -->            
                 <div id="titre_principal">
                     <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                    <h2>En plein centre ville ou en pleine nature</h2>
+                    <h3>En plein centre ville ou en pleine nature</h3>
                 </div>
-
-                <div id="recherche">
-                    <div class="barre">
-                        <i class="fas fa-map-marker-alt"></i>
+        <!-- ========== Rercherche utilisateur ========== -->
+                <div id="barre_utilisateur">
+                    <div id="recherche">
                         <form>
-                            <input type="search" name="recherche" placeholder="Marseille, France" />
-                            <input type="submit" value="Rechercher" disabled="true" />
+                        <div id=pin>
+                        <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <input type="search" id=cadre style="border:none" name="recherche" placeholder="Marseille, France" />
+                        <input type="submit" id=bouton value="Rechercher" />
                         </form>
                     </div>
-                    <div class="filtres">
-                        <h3>Filtres</h3>
+                    <div id="filtres">
+                        <h2>Filtres</h2>
                             <ul>
                                 <li>Économique</li>
                                 <li>Familial</li>
@@ -55,42 +57,48 @@
                             <a href="#">
                             <div class="premier_hotel">
                                 <img src="Ressources/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Photo Marseille 1" width="200px" height="200px" />
-                                <h2>Auberge de la Cannebière</h2>
-                                <h3>Nuit à partir de 25€</h3>
-                                <div id="premier_groupe_etoiles">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star disabled"></i>
+                                <div class="texte_premier_hotel">
+                                    <h2>Auberge de la Cannebière</h2>
+                                    <h3>Nuit à partir de 25€</h3>
+                                    <div id="premier_groupe_etoiles">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star disabled"></i>
+                                    </div>
                                 </div>
                             </div>
                             </a>
                             <a href="#">
                             <div class="second_hotel">
                                 <img src="Ressources/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Photo Marseille 2" width="200px" height="200px" />
-                                <h2>Hôtel du port</h2>
-                                <h3>Nuit à partir de 52€</h3>
-                                <div id="deuxieme_groupe_etoiles">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
+                                <div class="texte_deuxieme_hotel">
+                                    <h2>Hôtel du port</h2>
+                                    <h3>Nuit à partir de 52€</h3>
+                                    <div id="deuxieme_groupe_etoiles">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
                                 </div>
                             </div>
                             </a>
                             <a href="#">
                             <div class="troisieme_hotel">
                                 <img src="Ressources/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Photo Marseille 3" width="200px" height="200px" />
-                                <h2>Hôtel les mouettes</h2>
-                                <h3>Nuit à partir de 76€</h3>
-                                <div id="troisieme_groupe_etoiles">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star disabled"></i>
+                                <div class="texte_troisieme_hotel">
+                                    <h2>Hôtel les mouettes</h2>
+                                    <h3>Nuit à partir de 76€</h3>
+                                    <div id="troisieme_groupe_etoiles">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star disabled"></i>
+                                    </div>
                                 </div>
                             </div>
                             </a>

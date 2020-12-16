@@ -35,9 +35,27 @@ a {
     text-decoration: none;
     color: black;
 }
+::placeholder {
+    font-family: 'Raleway';
+    font-size: 2em;
+    padding-left: 20px;
+}
+#logo img {
+    width: 150px;
+    height: auto;
+}
+#titre_principal h1 {
+    position: relative;
+    top: -10px;
+}
+#titre_principal h3 {
+    position: relative;
+    top: -15px;
+}
 
 /* ========== Recherche ==========*/
 nav ul {
+    font-family: 'Raleway';
     list-style-type: none;
     display: flex;
     justify-content: flex-end;
@@ -45,18 +63,68 @@ nav ul {
 nav li {
     margin-right: 15px;
 }
-form {
+#recherche {
+    width: 600px;
+    height: 65px;
+    box-shadow: 0px 0px 4px rgb(221, 221, 221);
+    border-radius: 20px;
+    overflow: hidden;
     position: relative;
-    margin-left: 25px;
+    top: -10px;
+}
+form {
+    width: 600px;
+    height: 65px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+}
+#bouton {
+    width: 200px;
+    height: 80px;
+    background-color: #0065FC;
+    color: white;
+    font-size: 2em;
+    border: none;
+    outline: none;
+}
+#bouton:hover {
+    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
+}
+#cadre {
+    width: 335px;
+    height: 80px;
+}
+#pin {
+    width: 75px;
+    height: 80px;
+    background-color: #f2f2f2;
 }
 .fa-map-marker-alt {
-    position:absolute
+    padding-left: 25px;
+    padding-top: 30px;
+    font-size: 1.3em;
 }
-.filtres ul
+#filtres ul li {
+    margin-right: 20px;
+}
+#filtres
 {
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+}
+#filtres ul {
+    font-family: 'Raleway';
+    font-size: 1.2em;
+    font-weight: 700;
     list-style-type: none;
     display: flex;
     flex-direction: row;
+}
+#filtres h2 {
+    padding-top: 3px;
 }
 
 /* ========== Sections ==========*/
@@ -102,6 +170,7 @@ form {
     height: 240px;
     transition: transform .2s;
     box-shadow: 0px 10px 4px rgb(221, 221, 221);
+    position: relative;
 }
 .premier_hotel:hover {
     transform: scale(1.2);
@@ -384,16 +453,4 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-
-
-.filtres ul li
-{
-    margin-right: 20px;
-}
-
-.filtres
-{
-    display: flex;
 }
