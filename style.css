@@ -14,11 +14,11 @@ h1, h2 {
     font-family: 'Raleway';
 }
 h1 {
-    font-size: 1.6em;
+    font-size: 2em;
     margin: 3px;
 }
 h2 {
-    font-size: 1.2em;
+    font-size: 1.4em;
     margin: 3px;
 }
 h3 {
@@ -101,7 +101,7 @@ nav ul {
 }
 #recherche {
     width: 600px;
-    height: 65px;
+    height: 60px;
     box-shadow: 0px 0px 4px rgb(221, 221, 221);
     border-radius: 20px;
     overflow: hidden;
@@ -109,7 +109,7 @@ nav ul {
 }
 form {
     width: 600px;
-    height: 65px;
+    height: 60px;
     align-items: center;
     display: flex;
     flex-direction: row;
@@ -119,7 +119,9 @@ form {
     height: 80px;
     background-color: #0065FC;
     color: white;
-    font-size: 2em;
+    font-size: 1.5em;
+    font-weight: 500;
+    font-family: 'Raleway';
     border: none;
     outline: none;
 }
@@ -136,30 +138,177 @@ form {
     background-color: #f2f2f2;
 }
 .fa-map-marker-alt {
-    padding-left: 25px;
+    padding-left: 27px;
     padding-top: 30px;
     font-size: 1.3em;
 }
-#filtres ul li {
-    margin-right: 20px;
-}
+
+        /* ========== Filtres ==========*/
 #filtres {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     margin-top: 50px;
-    width: 1200px;
+    width: 1300px;
 }
 #filtres ul {
     font-family: 'Raleway';
     font-size: 1.3em;
     font-weight: 700;
-    width: 1000px;
+    width: 1200px;
     list-style-type: none;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
+
+                /* ========== Filtre économique ==========*/
+.economique {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 240px;
+    height: 60px;
+    border: 2px solid #c7c7c7;
+    border-radius: 40px;
+}
+.filtre_economique {
+    transition: transform .2s;
+}
+.filtre_economique:hover {
+    transform: scale(1.2);
+}
+.texte_economique {
+    padding-left: 32%;
+}
+.bulle_economique {
+    position: absolute;
+    left: -5px;
+    background-color: #DEEBFF;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
+.fa-money-bill-wave {
+    position: absolute;
+    padding-left: 16px;
+    padding-top: 19px;
+    font-size: 1.2em;
+    color: #0065FC;
+}
+  
+                /* ========== Filtre familial ==========*/
+.familial {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 190px;
+    height: 60px;
+    border: 2px solid #c7c7c7;
+    border-radius: 40px;
+}
+.filtre_familial {
+    transition: transform .2s;
+}
+.filtre_familial:hover {
+    transform: scale(1.2);
+}
+.texte_familial {
+    padding-left: 40%;
+}
+.bulle_familial {
+    position: absolute;
+    left: -5px;
+    background-color: #DEEBFF;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
+.fa-child {
+    font-size: 1.2em;
+    color: #0065FC;
+    padding-left: 22px;
+    padding-top: 18px;
+}
+                /* ========== Filtre romantique ==========*/
+.romantique {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 250px;
+    height: 60px;
+    border: 2px solid #c7c7c7;
+    border-radius: 40px;
+}
+.filtre_romantique {
+    transition: transform .2s;
+}
+.filtre_romantique:hover {
+    transform: scale(1.2);
+}
+.texte_romantique {
+    position: absolute;
+    left: 80px;
+}
+.bulle_romantique {
+    position: absolute;
+    left: -5px;
+    background-color: #DEEBFF;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
+.fa-heart {
+    position: absolute;
+    padding-top: 19px;
+    padding-left: 19px;
+    font-size: 1.2em;
+    color: #0065FC;
+}
+                /* ========== Filtre animaux ==========*/
+.animaux {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 250px;
+    height: 60px;
+    border: 2px solid #c7c7c7;
+    border-radius: 40px;
+}
+.filtre_animaux {
+    transition: transform .2s;
+}
+.filtre_animaux:hover {
+    transform: scale(1.2);
+}
+.texte_animaux {
+    position: absolute;
+    left: 80px;
+}
+.bulle_animaux {
+    position: absolute;
+    left: -5px;
+    background-color: #DEEBFF;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
+.fa-dog {
+    position: absolute;
+    padding-left: 18px;
+    padding-top: 17px;
+    font-size: 1.2em;
+    color: #0065FC;
+}                             
 .information {
     margin-top: 50px;
     width: 550px;
@@ -188,16 +337,20 @@ form {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
     background-color: #f2f2f2;
     border: 20px #f2f2f2 solid;
     border-radius: 20px;
     width: 1200px;
-    height: 900px;
+    height: 850px;
     margin-top: 50px;
     order: 1;
 }
 #section_hebergements h1 {
-
+    height: 20px;
+    padding-left: 25px;
+    padding-top: 30px;
+    position: absolute;
 }
 #premiere_ligne
 {
@@ -205,7 +358,7 @@ form {
     flex-direction: row;
     justify-content: space-around;
     width: 1200px;
-    padding-top: 80px;
+    padding-top: 95px;
 }
 .premier_hotel
 {
@@ -216,18 +369,13 @@ form {
     border-radius: 30px;
     width: 340px;
     height: 260px;
-    transition: transform .2s;
     box-shadow: 0px 10px 4px rgb(221, 221, 221);
     overflow: hidden;
-}
-.premier_hotel:hover {
-    transform: scale(1.2);
 }
 .premier_hotel img {
     width: 340px;
     height: 160px;
     object-fit: cover;
-    overflow: hidden;
 }
 .texte_premier_hotel {
     display: flex;
@@ -242,7 +390,7 @@ form {
     display: flex;
     flex-direction: row;
     padding-left: 2px;
-    padding-top: 12px;
+    padding-top: 8px;
 }
 .second_hotel
 {
@@ -253,18 +401,13 @@ form {
     border-radius: 30px;
     width: 340px;
     height: 260px;
-    transition: transform .2s;
     box-shadow: 0px 10px 4px rgb(221, 221, 221);
     overflow: hidden;
-}
-.second_hotel:hover {
-    transform: scale(1.2);
 }
 .second_hotel img {
     width: 340px;
     height: 160px;
     object-fit: cover;
-    overflow: hidden;
 }
 .texte_second_hotel {
     display: flex;
@@ -279,7 +422,7 @@ form {
     display: flex;
     flex-direction: row;
     padding-left: 2px;
-    padding-top: 12px;
+    padding-top: 8px;
 }
 .troisieme_hotel
 {
@@ -290,18 +433,13 @@ form {
     border-radius: 30px;
     width: 340px;
     height: 260px;
-    transition: transform .2s;
     box-shadow: 0px 10px 4px rgb(221, 221, 221);
     overflow: hidden;
-}
-.troisieme_hotel:hover {
-    transform: scale(1.2);
 }
 .troisieme_hotel img {
     width: 340px;
     height: 160px;
     object-fit: cover;
-    overflow: hidden;
 }
 .texte_troisieme_hotel {
     display: flex;
@@ -316,7 +454,7 @@ form {
     display: flex;
     flex-direction: row;
     padding-left: 2px;
-    padding-top: 12px;
+    padding-top: 8px;
 }
 #deuxieme_ligne
 {
@@ -324,7 +462,6 @@ form {
     flex-direction: row;
     justify-content: space-around;
     width: 1200px;
-    padding-bottom: 170px;
 }
 .quatrieme_hotel
 {
@@ -335,18 +472,13 @@ form {
     border-radius: 30px;
     width: 340px;
     height: 260px;
-    transition: transform .2s;
     box-shadow: 0px 10px 4px rgb(221, 221, 221);
     overflow: hidden;
-}
-.quatrieme_hotel:hover {
-    transform: scale(1.2);
 }
 .quatrieme_hotel img {
     width: 340px;
     height: 160px;
     object-fit: cover;
-    overflow: hidden;
 }
 .texte_quatrieme_hotel {
     display: flex;
@@ -361,7 +493,7 @@ form {
     display: flex;
     flex-direction: row;
     padding-left: 2px;
-    padding-top: 12px;
+    padding-top: 8px;
 }
 .cinquieme_hotel
 {
@@ -372,18 +504,13 @@ form {
     border-radius: 30px;
     width: 340px;
     height: 260px;
-    transition: transform .2s;
     box-shadow: 0px 10px 4px rgb(221, 221, 221);
     overflow: hidden;
-}
-.cinquieme_hotel:hover {
-    transform: scale(1.2);
 }
 .cinquieme_hotel img {
     width: 340px;
     height: 160px;
     object-fit: cover;
-    overflow: hidden;
 }
 .texte_cinquieme_hotel {
     display: flex;
@@ -398,7 +525,7 @@ form {
     display: flex;
     flex-direction: row;
     padding-left: 2px;
-    padding-top: 12px;
+    padding-top: 8px;
 }
 .sixieme_hotel
 {
@@ -409,18 +536,13 @@ form {
     border-radius: 30px;
     width: 340px;
     height: 260px;
-    transition: transform .2s;
     box-shadow: 0px 10px 4px rgb(221, 221, 221);
     overflow: hidden;
-}
-.sixieme_hotel:hover {
-    transform: scale(1.2);
 }
 .sixieme_hotel img {
     width: 340px;
     height: 160px;
     object-fit: cover;
-    overflow: hidden;
 }
 .texte_sixieme_hotel {
     display: flex;
@@ -435,86 +557,91 @@ form {
     display: flex;
     flex-direction: row;
     padding-left: 2px;
-    padding-top: 12px;
+    padding-top: 8px;
 }
 #afficher_plus {
-    width: 400px;
-    height: 80px;
     color: black;
     font-family: 'Raleway';
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 700;
     border: none;
     outline: none;
     background: none;
-    left: -70px;
     top: 765px;
+    padding-left: 30px;
+    padding-bottom: 50px;
 }
-#affichier_plus:hover {
-    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
-}
-
 
     /* ========== Section aside ==========*/
 #section_aside {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
     width: 500px;
-    height: 900px;
+    height: 850px;
     background-color: #f2f2f2;
     border: 20px #f2f2f2 solid;
     border-radius: 20px;
     margin-top: 50px;
     order: 2;
 }
-#section_aside h1 {
-    top: 0px;
-    left: 40px;
-}
-#section_aside h2 {
-    padding-left: 160px;
-}
-#section_aside h3 {
-    padding-left: 160px;
+.titre_aside {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    height: 20px;
+    width: 450px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 30px;
 }
 .fa-chart-line {
     font-size: 1.7em;
-    top: 20px;
-    right: 10px;
+}
+.colonne_aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 800px;
+    padding-top: 95px;
+    padding-bottom: 50px;
 }
         /* ========== Premier Hôtel Aside ========== */
 #premier_hotel_aside {
     border: 5px rgb(255, 255, 255) solid;
-    border-radius: 10px;
+    border-radius: 30px;
     background-color: #ffffff;
-    width: 420px;
-    height: 170px;
-    margin-top: 0px;
+    width: 445px;
+    height: 195px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    transition: transform .2s;
-    align-self: center;
     order: 1;
     box-shadow: 0px 10px 4px rgb(221, 221, 221);
-}
-#premier_hotel_aside:hover {
-    transform: scale(1.2);
+    overflow: hidden;
 }
 #premier_hotel_aside img {
-    width: 150px;
-    height: 170px;
+    width: 180px;
+    height: 195px;
     object-fit: cover;
-    overflow: hidden;
-    border-radius: 10px;
 }
 .texte_premier_hotel_aside {
     display: flex;
     flex-direction: column;
-    width: 200px;
-    padding-left: 80px;
+    justify-content: space-between;
+    width: 265px;
+    height: 180px;
+    padding-left: 20px;
+    padding-top: 20px;
     background-color: #ffffff;
+}
+.titres_premier_hotel_aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 10px;
 }
 .texte_premier_hotel_aside h2 {
     display: flex;
@@ -529,132 +656,260 @@ form {
 #septieme_groupe_etoiles {
     display: flex;
     flex-direction: row;
-    top: 110px;
-    left: 170px;
+    padding-bottom: 20px;
 }
         /* ========== Deuxième Hôtel Aside ========== */
 #deuxieme_hotel_aside {
     border: 5px rgb(255, 255, 255) solid;
-    border-radius: 10px;
+    border-radius: 30px;
     background-color: #ffffff;
-    width: 420px;
-    height: 170px;
-    margin-top: -100px;
+    width: 445px;
+    height: 195px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    transition: transform .2s;
     align-self: center;
     order: 2;
     box-shadow: 0px 10px 4px rgb(221, 221, 221);
+    overflow: hidden;
 }
-#deuxieme_hotel_aside:hover {
-    transform: scale(1.2);
+#deuxieme_hotel_aside img {
+    width: 180px;
+    height: 195px;
+    object-fit: cover;
+}
+.texte_deuxieme_hotel_aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 265px;
+    height: 180px;
+    padding-left: 20px;
+    padding-top: 20px;
+    background-color: #ffffff;
+}
+.titres_deuxieme_hotel_aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 10px;
+}
+.texte_deuxieme_hotel_aside h2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    top: -10px;
+}
+.texte_deuxieme_hotel_aside h3 {
+    top: 60px;
+    left: 10px;
+}
+#huitieme_groupe_etoiles {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 20px;
 }
         /* ========== Troisième Hôtel Aside ========== */
 #troisieme_hotel_aside {
     border: 5px rgb(255, 255, 255) solid;
-    border-radius: 10px;
+    border-radius: 30px;
     background-color: #ffffff;
-    width: 420px;
-    height: 170px;
-    margin-top: -100px;
+    width: 445px;
+    height: 195px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    transition: transform .2s;
     align-self: center;
-    order: 3;
+    order: 2;
     box-shadow: 0px 10px 4px rgb(221, 221, 221);
+    overflow: hidden;
 }
-#troisieme_hotel_aside:hover {
-    transform: scale(1.2);
+#troisieme_hotel_aside img {
+    width: 180px;
+    height: 195px;
+    object-fit: cover;
 }
+.texte_troisieme_hotel_aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 265px;
+    height: 180px;
+    padding-left: 20px;
+    padding-top: 20px;
+    background-color: #ffffff;
+}
+.titres_troisieme_hotel_aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 10px;
+}
+.texte_troisieme_hotel_aside h2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    top: -10px;
+}
+.texte_troisieme_hotel_aside h3 {
+    top: 60px;
+    left: 10px;
+}
+#neuvieme_groupe_etoiles {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 20px;
+}
+
     /* ========== Section activités ==========*/
 #section_activites {
     width: 1850px;
-    height: 500px;
+    height: 800px;
     order: 3;
+    padding-top: 90px;
 }
 #activites {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 1850px;
-    left: 60px;
-    right: 60px;
-    margin-bottom: 10px;
-    height: 500px;
+    height: 550px;
 }
 .premiere_activite {
-    border: 10px rgb(255, 255, 255) solid;
-    border-radius: 10px;
+    border-radius: 30px;
     width: 350px;
     height: 500px;
-    transition: transform .2s;
     box-shadow: 0px 10px 4px rgb(221, 221, 221);
-}
-.premiere_activite:hover {
-    transform: scale(1.2);
-}
-.deuxieme_activite {
-    border: 10px rgb(255, 255, 255) solid;
-    border-radius: 10px;
-    width: 350px;
-    height: 240px;
-    transition: transform .2s;
-    box-shadow: 0px 10px 4px rgb(221, 221, 221);
-}
-.deuxieme_activite:hover {
-    transform: scale(1.2);
-}
-.troisieme_activite {
-    border: 10px rgb(255, 255, 255) solid;
-    border-radius: 10px;
-    width: 350px;
-    height: 190px;
-    transition: transform .2s;
-    box-shadow: 0px 10px 4px rgb(221, 221, 221);
-}
-.troisieme_activite:hover {
-    transform: scale(1.2);
-}
-.quatrieme_activite {
-    border: 10px rgb(255, 255, 255) solid;
-    border-radius: 10px;
-    width: 350px;
-    height: 500px;
-    transition: transform .2s;
-    box-shadow: 0px 10px 4px rgb(221, 221, 221);
-}
-.quatrieme_activite:hover {
-    transform: scale(1.2);
-}
-.cinquieme_activite {
-    border: 10px rgb(255, 255, 255) solid;
-    border-radius: 10px;
-    width: 350px;
-    height: 190px;
-    transition: transform .2s;
-    box-shadow: 0px 10px 4px rgb(221, 221, 221);
-}
-.cinquieme_activite:hover {
-    transform: scale(1.2);
-}
-.sixieme_activite {
-    border: 10px rgb(255, 255, 255) solid;
-    border-radius: 10px;
-    width: 350px;
-    height: 190px;
-    transition: transform .2s;
-    box-shadow: 0px 10px 4px rgb(221, 221, 221);
-}
-.sixieme_activite:hover {
-    transform: scale(1.2);
-}
-#deuxieme_colonne
-{
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+.image_premiere_activite img {
+    height: 440px;
+    width: 350px;
+    object-fit: cover;
+}
+.titre_premiere_activite {
+    height: 60px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+.premiere_colonne_activites {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 600px;
+}
+.deuxieme_activite {
+    border-radius: 30px;
+    width: 350px;
+    height: 260px;
+    box-shadow: 0px 10px 4px rgb(221, 221, 221);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.image_deuxieme_activite img {
+    width: 350px;
+    height: 200px;
+    object-fit: cover;
+}
+.titre_deuxieme_activite {
+    height: 60px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+.troisieme_activite {
+    border-radius: 30px;
+    width: 350px;
+    height: 180px;
+    box-shadow: 0px 10px 4px rgb(221, 221, 221);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.image_troisieme_activite img {
+    width: 350px;
+    height: 120px;
+    object-fit: cover;
+}
+.titre_troisieme_activite {
+    height: 60px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+.quatrieme_activite {
+    border-radius: 30px;
+    width: 350px;
+    height: 500px;
+    box-shadow: 0px 10px 4px rgb(221, 221, 221);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.image_quatrieme_activite img {
+    height: 440px;
+    width: 350px;
+    object-fit: cover;
+}
+.titre_quatrieme_activite {
+    height: 60px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+.cinquieme_activite {
+    border-radius: 30px;
+    width: 350px;
+    height: 200px;
+    box-shadow: 0px 10px 4px rgb(221, 221, 221);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.image_cinquieme_activite img {
+    width: 350px;
+    height: 140px;
+    object-fit: cover;
+}
+.titre_cinquieme_activite {
+    height: 60px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+.sixieme_activite {
+    border-radius: 30px;
+    width: 350px;
+    height: 240px;
+    box-shadow: 0px 10px 4px rgb(221, 221, 221);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.image_sixieme_activite img {
+    width: 350px;
+    height: 180px;
+    object-fit: cover;
+}
+.titre_sixieme_activite {
+    height: 60px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+.premiere_colonne_activites {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 500px;
+}
+.deuxieme_colonne_activites {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 500px;
 }
