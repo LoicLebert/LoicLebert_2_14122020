@@ -5,9 +5,12 @@
     font-weight: normal;
     font-style: normal;
 }
+body {
+    margin: 0;
+}
 #bloc_page {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
     margin-top: 20px;
 }
 h1, h2 {
@@ -764,15 +767,16 @@ form {
     /* ========== Section activités ==========*/
 #section_activites {
     width: 1850px;
-    height: 800px;
+    height: 620px;
     order: 3;
-    padding-top: 90px;
+    padding-top: 70px;
 }
 #activites {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     height: 550px;
+    padding-top: 20px;
 }
 .premiere_activite {
     border-radius: 30px;
@@ -912,4 +916,69 @@ form {
     flex-direction: column;
     justify-content: space-between;
     height: 500px;
+}
+
+/* ========== FOOTER ==========*/
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 250px;
+    background-color: #f2f2f2;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+footer h2 {
+    font-size: 1.2em;
+}
+footer ul {
+    list-style-type: none;
+    font-family: 'Raleway';
+}
+.colonnes_footer {
+    width: 1600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-right: 40px;
+}
+.footer_premiere_colonne {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+}
+.footer_premiere_colonne ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100px;
+}
+.footer_deuxieme_colonne {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+}
+.footer_deuxieme_colonne ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100px;
+}
+
+.footer_troisieme_colonne {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+}
+.footer_troisieme_colonne ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100px;
 }
