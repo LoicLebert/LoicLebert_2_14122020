@@ -17,7 +17,7 @@ h1, h2 {
     font-family: 'Raleway';
 }
 h1 {
-    font-size: 2em;
+    font-size: 1.8em;
     margin: 3px;
 }
 h2 {
@@ -32,6 +32,10 @@ h3 {
 ul {
     margin: 3px;
     padding: 0px;
+}
+a {
+    font-family: 'Raleway';
+    font-size: 1.2em;
 }
 .fa-star {
     color: #0065FC;
@@ -51,10 +55,6 @@ a {
     font-family: 'Raleway';
     font-size: 1em;
 }
-#logo img {
-    width: 150px;
-    height: auto;
-}
 #titre_principal h1 {
     margin-top: 30px;
 }
@@ -69,39 +69,39 @@ input[type="search"] {
     /* ========== Logo et navigation ==========*/
 #logo_navigation {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
 }
-
-/* ========== Recherche ==========*/
-nav ul {
+#logo_navigation img {
+    width: 150px;
+    height: auto;
+}
+.hebergements_activites {
+    display: flex;
+    flex-direction: row;
+}
+.navigation ul {
     display: flex;
     flex-direction: row;
     list-style-type: none;
     justify-content: space-between;
-    align-items: center;
-    width: 600px;
-    margin-top: 20px;
-    font-family: 'Raleway';
-    font-size: 1.2em;
+    margin-top: 18px;
 }
-.nav_hebergements a:hover {
+.navigation a:hover {
     color: #0065FC;
     border-top: 3px #0065FC solid;
     padding-top: 35px;
 }
-.nav_activites a:hover {
+.inscription {
     color: #0065FC;
+}
+.inscription a:hover {
     border-top: 3px #0065FC solid;
     padding-top: 35px;
 }
-.nav_inscription a {
-    color: #0065FC;
-}
-.nav_inscription a:hover {
-    border-top: 3px #0065FC solid;
-    padding-top: 35px;
-}
+
+/* ========== Recherche ==========*/
 #recherche {
     width: 600px;
     height: 60px;
@@ -333,7 +333,6 @@ form {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 1850px;
 }
     /* ========== Première section ==========*/
 #section_hebergements {
@@ -981,4 +980,35 @@ footer ul {
     flex-direction: column;
     justify-content: space-between;
     height: 100px;
+}
+
+/* ========== Règles responsive design ==========*/
+@media screen and (max-width: 768px) {
+    #principale {
+        width: auto;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .navigation {
+        flex: 0 0 100%;
+        order: 2;
+    }
+    .navigation a:hover {
+        color: #0065FC;
+        border-top: none;
+        padding-top: 0;
+    }
+    .inscription {
+        position: absolute;
+        right: 0%;
+        top: 6%;
+        font-weight: 700;
+    }
+    .hebergements_activites {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        text-align: center;
+    }
 }
