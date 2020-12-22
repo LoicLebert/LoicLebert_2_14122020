@@ -13,7 +13,7 @@ body {
     margin-right: 40px;
     margin-top: 20px;
 }
-h1, h2 {
+h1, h2, h3, a, p {
     font-family: 'Raleway';
 }
 h1 {
@@ -21,11 +21,11 @@ h1 {
     margin: 3px;
 }
 h2 {
-    font-size: 1.4em;
+    font-size: 1.6em;
     margin: 3px;
 }
 h3 {
-    font-family: 'Raleway';
+    font-size: 1em;
     font-weight: 400;
     margin: 3px;
 }
@@ -34,8 +34,10 @@ ul {
     padding: 0px;
 }
 a {
-    font-family: 'Raleway';
     font-size: 1.2em;
+}
+p {
+    font-size: 2em;
 }
 .fa-star {
     color: #0065FC;
@@ -59,7 +61,6 @@ a {
     margin-top: 30px;
 }
 #titre_principal h3 {
-    font-size: 1.2em;
     margin-top: 5px;
 }
 input[type="search"] {
@@ -117,7 +118,7 @@ form {
     display: flex;
     flex-direction: row;
 }
-#bouton {
+#bouton_recherche {
     width: 200px;
     height: 80px;
     background-color: #0065FC;
@@ -128,10 +129,10 @@ form {
     border: none;
     outline: none;
 }
-#bouton:hover {
+#bouton_recherche:hover {
     box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
 }
-#cadre {
+#cadre_recherche {
     width: 335px;
     height: 80px;
 }
@@ -146,185 +147,24 @@ form {
     font-size: 1.3em;
 }
 
-        /* ========== Filtres ==========*/
+/* ========== Filtres ==========*/
 #filtres {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 50px;
-    width: 1300px;
+    flex-wrap: wrap;
+    align-items: center;   
 }
-#filtres ul {
-    font-family: 'Raleway';
-    font-size: 1.3em;
-    font-weight: 700;
-    width: 1200px;
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-                /* ========== Filtre économique ==========*/
-.economique {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    width: 240px;
-    height: 60px;
-    border: 2px solid #c7c7c7;
-    border-radius: 40px;
-}
-.filtre_economique {
-    transition: transform .2s;
-}
-.filtre_economique:hover {
-    transform: scale(1.2);
-}
-.texte_economique {
-    padding-left: 32%;
-}
-.bulle_economique {
-    position: absolute;
-    left: -5px;
+#filtres i {
     background-color: #DEEBFF;
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
+    border: solid 5px #DEEBFF;
+    border-radius: 20px;
+    color:#0065FC;
+    margin-right: 7px;
 }
-.fa-money-bill-wave {
-    position: absolute;
-    padding-left: 16px;
-    padding-top: 19px;
-    font-size: 1.2em;
-    color: #0065FC;
-}
-  
-                /* ========== Filtre familial ==========*/
-.familial {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    width: 190px;
-    height: 60px;
-    border: 2px solid #c7c7c7;
-    border-radius: 40px;
-}
-.filtre_familial {
-    transition: transform .2s;
-}
-.filtre_familial:hover {
-    transform: scale(1.2);
-}
-.texte_familial {
-    padding-left: 40%;
-}
-.bulle_familial {
-    position: absolute;
-    left: -5px;
-    background-color: #DEEBFF;
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
-}
-.fa-child {
-    font-size: 1.2em;
-    color: #0065FC;
-    padding-left: 22px;
-    padding-top: 18px;
-}
-                /* ========== Filtre romantique ==========*/
-.romantique {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    width: 250px;
-    height: 60px;
-    border: 2px solid #c7c7c7;
-    border-radius: 40px;
-}
-.filtre_romantique {
-    transition: transform .2s;
-}
-.filtre_romantique:hover {
-    transform: scale(1.2);
-}
-.texte_romantique {
-    position: absolute;
-    left: 80px;
-}
-.bulle_romantique {
-    position: absolute;
-    left: -5px;
-    background-color: #DEEBFF;
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
-}
-.fa-heart {
-    position: absolute;
-    padding-top: 19px;
-    padding-left: 19px;
-    font-size: 1.2em;
-    color: #0065FC;
-}
-                /* ========== Filtre animaux ==========*/
-.animaux {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    width: 250px;
-    height: 60px;
-    border: 2px solid #c7c7c7;
-    border-radius: 40px;
-}
-.filtre_animaux {
-    transition: transform .2s;
-}
-.filtre_animaux:hover {
-    transform: scale(1.2);
-}
-.texte_animaux {
-    position: absolute;
-    left: 80px;
-}
-.bulle_animaux {
-    position: absolute;
-    left: -5px;
-    background-color: #DEEBFF;
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
-}
-.fa-dog {
-    position: absolute;
-    padding-left: 18px;
-    padding-top: 17px;
-    font-size: 1.2em;
-    color: #0065FC;
-}                             
-.information {
-    margin-top: 50px;
-    width: 550px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.fa-info-circle {
-    padding-top: -2px;
-    font-size: 2em;
-    color: #ffffff;
-    background-color: #0065FC;
-    border-radius: 50%;
+#filtres p {
+    border: solid 2px #F2F2F2;
+    border-radius: 25px;
+    padding-right: 1.5%;
+    margin: 7px;
 }
 
 /* ========== Sections ==========*/
@@ -347,12 +187,6 @@ form {
     height: 850px;
     margin-top: 50px;
     order: 1;
-}
-#section_hebergements h1 {
-    height: 20px;
-    padding-left: 25px;
-    padding-top: 30px;
-    position: absolute;
 }
 #premiere_ligne
 {
@@ -927,9 +761,6 @@ footer {
     margin-left: 0px;
     margin-right: 0px;
 }
-footer h2 {
-    font-size: 1.2em;
-}
 footer ul {
     list-style-type: none;
     font-family: 'Raleway';
@@ -984,10 +815,12 @@ footer ul {
 
 /* ========== Règles responsive design ==========*/
 @media screen and (max-width: 768px) {
-    #principale {
-        width: auto;
+    #bloc_page {
         margin-left: 0;
         margin-right: 0;
+    }
+    #logo_navigation img {
+        margin-left: 5%;
     }
     .navigation {
         flex: 0 0 100%;
@@ -1010,5 +843,10 @@ footer ul {
         justify-content: space-between;
         width: 100%;
         text-align: center;
+        border-bottom: 6px #f2f2f2 solid;
+        padding-bottom: 25px;
+        padding-top: 30px;
+        margin-left: 0;
+        margin-right: 0;
     }
 }
