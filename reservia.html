@@ -2,6 +2,7 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css" />
         <title>Reservia : Reservez un hébergement ou une activité dans la ville de votre choix !</title>
         <script src="https://kit.fontawesome.com/8264f3a608.js" crossorigin="anonymous"></script>
@@ -17,8 +18,8 @@
                     <nav class="navigation">
                         <ul>
                             <div class="hebergements_activites">
-                            <li><a href="#section_hebergements">&emsp;&emsp;Hébergements&emsp;&emsp;</a></li>
-                            <li><a href="#activites">&emsp;&emsp;Activités&emsp;&emsp;</a></li>
+                            <li class="nav_hebergements"><a href="#section_hebergements" >&emsp;&emsp;Hébergements&emsp;&emsp;</a></li>
+                            <li class="nav_activites"><a href="#activites" >&emsp;&emsp;Activités&emsp;&emsp;</a></li>
                             </div>
                             <li><a href="#" class="inscription">&emsp;&emsp;S'inscrire&emsp;&emsp;</a></li>
                         </ul>
@@ -30,19 +31,44 @@
                     <h3>En plein centre ville ou en pleine nature</h3>
                 </div>
         <!-- ========== Rercherche utilisateur ========== -->
-                    <form id="recherche">
+                <div id="barre_utilisateur">
+                    <div id="recherche">    
+                        <form>
                         <div id=pin>
                             <i class="fas fa-map-marker-alt"></i>
                         </div>
                         <input type="search" id=cadre_recherche style="border:none" name="recherche" placeholder="Marseille, France" />
-                        <input type="submit" id=bouton_recherche value="Rechercher" />
-                    </form>
+                        <button id=bouton_recherche><span>Rechercher</span><i class="fas fa-search"></i></button>
+                        </form>
+                    </div>
                     <div id="filtres">
-                        <h3>Filtres</h3>
-                        <p><i class="fas fa-money-bill-wave a"></i>Economique</p>
-                        <p><i class="fas fa-child"></i>Familial</p>
-                        <p><i class="fas fa-heart"></i>Romantique</p>
-                        <p><i class="fas fa-dog"></i>Animaux autorisés</p>
+                        <h2>Filtres</h2>
+                            <ul>
+                                <li>
+                                    <div class="bulle">
+                                        <i class="fas fa-money-bill-wave"></i>
+                                    </div>
+                                    <span class="texte">Économique</span>
+                                </li>
+                                <li>
+                                    <div class="bulle">
+                                        <i class="fas fa-child"></i>
+                                    </div>
+                                    <span class="texte">Familial</span>
+                                </li>
+                                <li>
+                                    <div class="bulle">
+                                        <i class="fas fa-heart"></i>
+                                    </div>
+                                    <span class="texte">Romantique</span>
+                                </li>
+                                <li>
+                                    <div class="bulle">
+                                        <i class="fas fa-dog"></i>
+                                    </div>
+                                    <span class="texte">Animaux autorisés</span>
+                                </li>
+                            </ul>
                     </div>
                     <div class="information">
                     <i class="fas fa-info-circle"></i>
