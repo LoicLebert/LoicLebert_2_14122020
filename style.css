@@ -1,6 +1,6 @@
 /* ========== Généralités ========== */
 @font-face {
-  font-family: "Ralewaybold";
+  font-family: "ralewaybold";
   src: url("raleway-variablefont_wght-webfont.woff2") format("woff2"),
     url("raleway-variablefont_wght-webfont.woff") format("woff");
   font-weight: normal;
@@ -8,6 +8,7 @@
 }
 body {
   margin: 0;
+  height: auto;
 }
 #bloc_page {
   margin-left: 40px;
@@ -57,6 +58,7 @@ a {
 }
 #titre_principal h1 {
   margin-top: 30px;
+  width: 100%;
 }
 #titre_principal h3 {
   margin-top: 5px;
@@ -263,6 +265,7 @@ main {
   justify-content: space-between;
   margin-top: 3rem;
   gap: 3%;
+  row-gap: 4rem;
 }
 /* ========== Première section ==========*/
 #section_hebergements {
@@ -272,8 +275,8 @@ main {
   background-color: #f2f2f2;
   border: 20px #f2f2f2 solid;
   border-radius: 20px;
-  width: 100%;
   max-width: 70rem;
+  width: 100%;
   min-height: 47rem;
   height: auto;
   order: 1;
@@ -347,9 +350,10 @@ main {
   border: 20px #f2f2f2 solid;
   border-radius: 20px;
   width: 100%;
-  max-width: 27rem;
+  min-width: 20rem;
   height: 47rem;
   order: 2;
+  flex: 1;
   padding: 2rem;
 }
 #titre_aside {
@@ -375,10 +379,10 @@ main {
 .hotel_aside {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   border: 5px rgb(255, 255, 255) solid;
   background-color: white;
   border-radius: 30px;
+  max-width: 50rem;
   height: 11.5rem;
   box-shadow: 0px 10px 4px rgb(221, 221, 221);
   overflow: hidden;
@@ -407,6 +411,7 @@ main {
 /* ========== Section activités ==========*/
 #section_activites {
   width: 100%;
+  max-width: 1920px;
   height: auto;
   order: 3;
   padding-top: 4rem;
@@ -422,6 +427,8 @@ main {
   min-height: 64rem;
   height: auto;
   padding-top: 2rem;
+  margin-bottom: 2rem;
+  row-gap: 4rem;
 }
 .activites span {
   font-family: "Raleway";
@@ -557,6 +564,9 @@ footer ul {
     margin-left: 0;
     margin-right: 0;
   }
+  #titre_principal {
+    margin: 4%;
+  }
   /* ========== Logo et navigation ==========*/
   #logo_navigation img {
     margin-left: 4%;
@@ -599,7 +609,6 @@ footer ul {
   }
   /* ========== Titre principal ==========*/
   #titre_principal {
-    width: 100%;
     margin: 4%;
   }
   #titre_principal h3 {
@@ -609,7 +618,7 @@ footer ul {
   #recherche {
     width: 90%;
     margin: 4%;
-    justify-content: center;
+    max-width: none;
   }
   #cadre_recherche {
     width: 70%;
@@ -718,6 +727,7 @@ footer ul {
   }
   .hotel_aside {
     height: 10rem;
+    justify-content: flex-start;
   }
   .texte_hotel_aside {
     padding-right: 0px;
@@ -730,9 +740,14 @@ footer ul {
   /* ========== Hébergements ==========*/
   #section_hebergements {
     width: 100%;
+    max-width: none;
     height: auto;
     background: none;
     border: none;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
     order: 2;
     padding: 4%;
   }
@@ -741,8 +756,7 @@ footer ul {
   }
   .hebergements {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 100%;
     gap: 1.5rem;
@@ -763,7 +777,6 @@ footer ul {
     width: 100%;
     height: auto;
     order: 3;
-    padding: 4%;
     margin-top: 8rem;
   }
   #section_activites h2 {
@@ -833,26 +846,74 @@ footer ul {
   }
 }
 @media screen and (min-width: 769px) and (max-width: 991px) {
-  .hebergements {
+  main {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+  }
+  #titre_principal {
+    margin: 4%;
+  }
+  #recherche {
+    max-width: none;
+  }
+  #deux_premieres_section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #section_hebergements {
+    max-width: none;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .hebergements {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     column-gap: 3rem;
   }
+  .hotel {
+    width: 18rem;
+  }
   .hotel_aside {
-    justify-content: flex-start;
+    justify-content: none;
   }
   .etoiles_aside {
     padding-bottom: 10%;
   }
   #section_hebergements_aside {
-    min-width: 90%;
+    max-width: none;
   }
   .activites {
     row-gap: 3rem;
     column-gap: 3rem;
     justify-content: center;
+    height: auto;
   }
   #section_activites {
     margin-top: 3rem;
+    height: auto;
+  }
+}
+@media screen and (min-width: 1921px) {
+  #section_hebergements {
+    max-width: 50%;
+  }
+  .hotel {
+    width: 30rem;
+  }
+  .hotel img {
+    width: auto;
+  }
+  .hotel_aside {
+    min-width: 50rem;
+  }
+  footer {
     height: auto;
   }
 }
