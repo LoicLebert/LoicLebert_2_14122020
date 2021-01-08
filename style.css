@@ -1,6 +1,6 @@
 /* ========== Généralités ========== */
 @font-face {
-  font-family: "ralewaybold";
+  font-family: "raleway";
   src: url("raleway-variablefont_wght-webfont.woff2") format("woff2"),
     url("raleway-variablefont_wght-webfont.woff") format("woff");
   font-weight: normal;
@@ -301,7 +301,6 @@ main {
   border: 5px rgb(255, 255, 255) solid;
   background-color: white;
   border-radius: 30px;
-  width: 20.5rem;
   height: 260px;
   box-shadow: 0px 10px 4px rgb(221, 221, 221);
   overflow: hidden;
@@ -350,7 +349,6 @@ main {
   border: 20px #f2f2f2 solid;
   border-radius: 20px;
   width: 100%;
-  min-width: 20rem;
   height: 47rem;
   order: 2;
   flex: 1;
@@ -427,7 +425,6 @@ main {
   min-height: 64rem;
   height: auto;
   padding-top: 2rem;
-  margin-bottom: 2rem;
   row-gap: 4rem;
 }
 .activites span {
@@ -692,7 +689,6 @@ footer ul {
     width: 100%;
   }
   /* ========== Principale ==========*/
-  main,
   #deux_premieres_section {
     display: flex;
     flex-direction: column;
@@ -762,6 +758,12 @@ footer ul {
     gap: 1.5rem;
     padding-bottom: 2rem;
   }
+  .hotel {
+    width: 100%;
+  }
+  .hotel img {
+    width: auto;
+  }
   .afficher_plus {
     font-size: 1.4rem;
   }
@@ -805,13 +807,24 @@ footer ul {
     border: 5px rgb(255, 255, 255) solid;
     background-color: white;
     border-radius: 30px;
-    width: 20.5rem;
     height: 260px;
     box-shadow: 0px 10px 4px rgb(221, 221, 221);
     overflow: hidden;
   }
+  .activite {
+    width: 17rem;
+  }
+  .activite_moyenne {
+    width: 17rem;
+  }
+  .activite_petite {
+    width: 17rem;
+  }
+  .activite_tres_petite {
+    width: 17rem;
+  }
   .activites img {
-    width: 340px;
+    width: auto;
     height: 200px;
     object-fit: cover;
   }
@@ -867,6 +880,7 @@ footer ul {
   #section_hebergements {
     max-width: none;
     flex: 1;
+    min-width: 70%;
     display: flex;
     flex-direction: column;
     justify-content: center;
