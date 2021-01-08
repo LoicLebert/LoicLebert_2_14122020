@@ -1,9 +1,9 @@
 /* ========== Généralités ========== */
 @font-face {
-  font-family: "raleway";
-  src: url("raleway-variablefont_wght-webfont.woff2") format("woff2"),
-    url("raleway-variablefont_wght-webfont.woff") format("woff");
-  font-weight: normal;
+  font-family: "Raleway";
+  src: url("Raleway-Regular.woff2") format("woff2"),
+    url("Raleway-Regular.woff") format("woff");
+  font-weight: bold;
   font-style: normal;
 }
 body {
@@ -24,6 +24,7 @@ p {
 }
 h1 {
   font-size: 1.8em;
+  font-weight: 900;
   margin: 0;
 }
 h2 {
@@ -67,7 +68,7 @@ input[type="search"] {
   font-family: "Raleway";
   padding-left: 5%;
   font-size: 1.4em;
-  font-weight: 700;
+  font-weight: 900;
 }
 /* ========== Logo et navigation ==========*/
 #logo_navigation {
